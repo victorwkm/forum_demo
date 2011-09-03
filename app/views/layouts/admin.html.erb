@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ForumDemo</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<h1>Admin Panel</h1>
+
+<%= render :partial => "common/user_nav" %>
+<%= yield %>
+
+</body>
+</html>
